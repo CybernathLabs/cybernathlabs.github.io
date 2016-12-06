@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Candy Page</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(function(){            $("#btn").click(function(){
+                console.log("click");
+                $.ajax("https://io.adafruit.com/api/groups/my-feeds/send.json?x-aio-key=cbf092d9bf6be526ca3078c8d5d2f10e525f1347&momentary=1");
+            })
+                        });
+        </script>
+	</head>
+	<body>
+		<button id="btn">Click Here</button>
+	</body>
+
+</html>
